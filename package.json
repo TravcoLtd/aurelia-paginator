@@ -1,23 +1,23 @@
 {
-  "name": "aurelia-typeahead",
-  "version": "1.0.9",
-  "description": "Aurelia wrapper for the twitter typeahead",
+  "name": "aurelia-paginator",
+  "version": "1.0.10",
+  "description": "Aurelia paginator",
   "keywords": [
     "aurelia",
     "http",
     "ajax"
   ],
-  "homepage": "https://github.com/TravcoLtd/aurelia-typeahead",
+  "homepage": "https://github.com/TravcoLtd/aurelia-paginator",
   "bugs": {
-    "url": "https://github.com/TravcoLtd/aurelia-typeahead/issues"
+    "url": "https://github.com/TravcoLtd/aurelia-paginator/issues"
   },
-  "main": "dist/typeahead.js",
+  "main": "dist/elements/paginator-nav.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TravcoLtd/aurelia-typeahead"
+    "url": "https://github.com/TravcoLtd/aurelia-paginator"
   },
   "jspm": {
-    "main": "typeahead",
+    "main": "dist/elements/paginator-nav.js",
     "format": "amd",
     "directories": {
       "lib": "dist"

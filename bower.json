@@ -1,0 +1,17 @@
+{
+  "name": "aurelia-paginator",
+  "version": "1.0.10",
+  "description": "Aurelia paginator",
+  "keywords": [
+    "aurelia",
+    "http",
+    "ajax",
+    "paginator"
+  ],
+  "main": [
+    "dist/elements/paginator-nav.js",
+    "dist/elements/paginator-nav.html",
+    "dist/attributes/active.js",
+    "dist/attributes/disabled.js"
+  ]
+}
