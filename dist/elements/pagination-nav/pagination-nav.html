@@ -1,0 +1,38 @@
+<template>
+
+    <require from='../../attributes/active'></require>
+    <require from='../../attributes/disabled'></require>
+
+    <nav if.bind="Pager.TotalRecords > 0">
+        <ul class="pagination">
+            <li if.bind="ShowFirstLast">
+                <a aria-label="First" click.delegate="setPageNumber(1)">
+                    <span aria-hidden="true">First</span>
+                </a>
+            </li>
+
+            <li disabled.bind="isFirstPage" if.bind="ShowPreviousNext">
+                <a aria-label="Previous" click.delegate="setPrevious()">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <template repeat.for="i of pageCount">
+                <li active.bind="($parent.Pager.PageNumber == i)">
+                    <a click.delegate="$parent.setPageNumber(i)">${(i)}</a>
+                </li>
+            </template>
+            <li disabled.bind="isLastPage" if.bind="ShowPreviousNext">
+                <a aria-label="Next" click.delegate="setNext()">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+
+            <li if.bind="ShowFirstLast">
+                <a aria-label="Last" click.delegate="setPageNumber(pageCount)">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+        </ul>
+    <nav>
+
+</template>
